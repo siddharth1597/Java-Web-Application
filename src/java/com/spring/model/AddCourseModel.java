@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.spring.beans;
+package com.spring.model;
 
 /**
  *
  * @author hp
  */
-public class AddCourseBean {
-    
-    private int courseID;
+public class AddCourseModel {
+
+    private String courseID;
     private String courseName;
     private String field;
     private String level;
@@ -19,11 +19,11 @@ public class AddCourseBean {
     private String prerequisites;
     private String recommended_list;
     
-    public int getCourseID() {
+    public String getCourseID() {
         return courseID;
     }
 
-    public void setCourseID(int courseID) {
+    public void setCourseID(String courseID) {
         this.courseID = courseID;
     }
 

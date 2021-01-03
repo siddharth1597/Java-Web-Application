@@ -12,6 +12,7 @@ body {
     background-position: inherit;
 }
 
-.table thead th {
-    color: white;
+.table thead th, .table tr {
+    color: white !important;
+    font-weight: 500;
 }

@@ -2,6 +2,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
 
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -50,14 +53,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                <c:forEach var="course" items="${course_list}">   
-                    <tr>  
-                        <td>${course_list.courseID}</td>  
-                        <td>${course_list.courseName}</td>  
-                        <td>${course_list.teacherName}</td>  
-                        <td>${course_list.recommended_list}</td>
-                    </tr>  
-                </c:forEach> 
+                    <c:forEach var="course" items="${course_list}">   
+                        <tr>  
+                            <td>${course.courseID}</td>  
+                            <td>${course.courseName}</td>  
+                            <td>${course.teacherName}</td>  
+                            <td>${course.recommended_list}</td>
+                        </tr>  
+                    </c:forEach> 
                 </tbody>
         </div>
     </body>
