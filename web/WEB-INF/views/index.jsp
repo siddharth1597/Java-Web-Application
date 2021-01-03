@@ -39,11 +39,6 @@
                         <input type="text" class="form-control" id="fields" placeholder="Fields" name="fields"/>
                     </div>
                 </div>
-                <!--                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <button  class="btn btn-primary w-50" id="submit_search">Search</button>
-                                    </div>
-                                </div>-->
             </div>
             <table id="course_table" class="table table-striped table-bordered">
                 <thead>
@@ -55,6 +50,14 @@
                     </tr>
                 </thead>
                 <tbody>
+                <c:forEach var="course" items="${course_list}">   
+                    <tr>  
+                        <td>${course_list.courseID}</td>  
+                        <td>${course_list.courseName}</td>  
+                        <td>${course_list.teacherName}</td>  
+                        <td>${course_list.recommended_list}</td>
+                    </tr>  
+                </c:forEach> 
                 </tbody>
         </div>
     </body>
