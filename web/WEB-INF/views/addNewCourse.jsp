@@ -13,32 +13,37 @@
     <body>
         <div class="container">
             <h3 class="mt-4 mb-4">Course Settings</h3>
-            <form>
+            <form method="post" action="saveCourse.htm">
                 <div class="form-group col-md-7">
                     <label for="id">Course ID</label>
-                    <input type="text" class="form-control" id="id" placeholder="Enter Course ID" name="id">
+                    <input type="text" class="form-control" id="courseID" placeholder="Enter Course ID" name="courseID">
                 </div>
                 <div class="form-group col-md-7">
                     <label for="name">Course Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter Course Name" name="name">
-                </div> <div class="form-group col-md-7">
+                    <input type="text" class="form-control" id="courseName" placeholder="Enter Course Name" name="courseName">
+                </div> 
+                <div class="form-group col-md-7">
+                    <label for="field">Field</label>
+                    <input type="text" class="form-control" id="field" placeholder="Enter Field" name="field">
+                </div>
+                <div class="form-group col-md-7">
                     <label for="level">Course Level</label>
                     <input type="text" class="form-control" id="level" placeholder="Enter Level" name="level">
                 </div>
                 <div class="form-group col-md-7">
                     <label for="teacher">Teacher Name</label>
-                    <input type="text" class="form-control" id="teacher" placeholder="Enter Teacher Name" name="teacher">
+                    <input type="text" class="form-control" id="teacherName" placeholder="Enter Teacher Name" name="teacherName">
                 </div>
                 <div class="form-group col-md-7">
                     <label for="pre">Prerequisites</label>
-                    <input type="text" class="form-control" id="pre" placeholder="Enter Prerequisites" name="pre">
+                    <input type="text" class="form-control" id="prerequisites" placeholder="Enter Prerequisites" name="prerequisites">
                 </div>
                 <div class="form-group col-md-7">
                     <label for="rec">Recommended:</label>
-                    <input type="text" class="form-control" id="rec" placeholder="Enter Recommended" name="rec">
+                    <input type="text" class="form-control" id="recommended_list" placeholder="Enter Recommended" name="recommended_list">
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-success mt-3 ml-3">Save Information</button>
+                    <button type="submit" value="Save" class="btn btn-success mt-3 ml-3">Save Information</button>
                 </div>
             </form>
         </div>

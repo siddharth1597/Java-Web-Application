@@ -9,14 +9,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import com.spring.beans.HomePageBean;
+import com.spring.beans.AddCourseBean;
 /**
  *
  * @author hp
  */
 
 @Controller
-@RequestMapping("/index.htm")
+@RequestMapping("/sid.htm")
 public class HomePageController {
     
     @RequestMapping(method = RequestMethod.GET)

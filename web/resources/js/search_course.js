@@ -36,6 +36,5 @@ $(document).ready(function () {
 });
 
 function addCourse() {
-    window.location = 'addcourse.htm';
+    window.location = 'showCourse.htm';
 }
-
