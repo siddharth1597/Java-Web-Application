@@ -5,7 +5,6 @@
  */
 package com.spring.controller;
 
-import com.mysql.cj.log.Log;
 import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
