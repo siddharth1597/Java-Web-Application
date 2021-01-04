@@ -12,7 +12,6 @@
         <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
         <script src="./resources/js/jquery.table-filterable.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="./resources/css/course_catalog.css">
         <script src="./resources/js/search_course.js"></script>
@@ -48,6 +47,8 @@
                     <tr>
                         <th>#</th>
                         <th>Course Name</th>
+                        <th>Level Course</th>
+                        <th>Field</th>
                         <th>Teacher Name</th>
                         <th>Recommended</th>
                     </tr>
@@ -55,9 +56,11 @@
                 <tbody>
                     <c:forEach var="course" items="${course_list}">   
                         <tr>  
-                            <td>${course.courseID}</td>  
-                            <td>${course.courseName}</td>  
-                            <td>${course.teacherName}</td>  
+                            <td>${course.courseID}</td>
+                            <td>${course.courseName}</td>
+                            <td>${course.level}</td>
+                            <td>${course.field}</td>
+                            <td>${course.teacherName}</td>
                             <td>${course.recommended_list}</td>
                         </tr>  
                     </c:forEach> 

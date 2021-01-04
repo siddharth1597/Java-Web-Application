@@ -36,6 +36,8 @@ public class CourseDao {
             AddCourseModel course = new AddCourseModel();
             course.setCourseID(res.getString("course_id"));
             course.setCourseName(res.getString("name"));
+            course.setLevel(res.getString("level"));
+            course.setField(res.getString("field"));
             course.setTeacherName(res.getString("teacher_name"));
             course.setRecommended_list(res.getString("recommended_list"));
             return course;
