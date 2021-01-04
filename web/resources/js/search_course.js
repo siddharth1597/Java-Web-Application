@@ -11,7 +11,7 @@ $(document).ready(function () {
                 filterSelector: '#course_name',
                 event: 'keyup',
                 filterCallback: function ($tr, filterValue) {
-                    return  $tr.children().eq(1).text().toLowerCase().indexOf(filterValue) != -1;
+                    return  $tr.children().eq(3).text().toLowerCase().indexOf(filterValue) != -1;
                 },
                 delay: 100
             },
@@ -19,7 +19,7 @@ $(document).ready(function () {
                 filterSelector: '#level_course',
                 event: 'keyup',
                 filterCallback: function ($tr, filterValue) {
-                    return  $tr.children().eq(2).text().toLowerCase().indexOf(filterValue) != -1;
+                    return  $tr.children().eq(1).text().toLowerCase().indexOf(filterValue) != -1;
                 },
                 delay: 100
             },
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 filterSelector: '#fields',
                 event: 'keyup',
                 filterCallback: function ($tr, filterValue) {
-                    return  $tr.children().eq(3).text().toLowerCase().indexOf(filterValue) != -1;
+                    return  $tr.children().eq(5).text().toLowerCase().indexOf(filterValue) != -1;
                 },
                 delay: 100
             }
