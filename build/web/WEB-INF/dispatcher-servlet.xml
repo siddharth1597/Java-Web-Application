@@ -27,7 +27,7 @@
 
     <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">    
         <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>    
-        <property name="url" value="jdbc:mysql://127.0.0.1:3306/java_web?serverTimezone=UTC"></property>    
+        <property name="url" value="jdbc:mysql://localhost:3306/java?serverTimezone=UTC"></property>    
         <property name="username" value="root"></property>    
         <property name="password" value=""></property>
     </bean>
@@ -37,6 +37,9 @@
     </bean>    
     
     <bean id="dao" class="com.spring.dao.CourseDao">    
+        <property name="template" ref="jt"></property>    
+    </bean>
+    <bean id="loginDao" class="com.spring.dao.LoginDeo">    
         <property name="template" ref="jt"></property>    
     </bean>
 </beans>
