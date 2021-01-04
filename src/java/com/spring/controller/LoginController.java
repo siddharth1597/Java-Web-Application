@@ -13,19 +13,17 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-
-import com.spring.dao.LoginDeo;
+import com.spring.dao.LoginDao;
 import com.spring.model.LoginModel;
 import org.springframework.beans.factory.annotation.Autowired;
-
 
 @Controller
 public class LoginController {
 
     @Autowired
-    LoginDeo login;
-    
-   @RequestMapping(value="/loginPage",method = RequestMethod.GET)
+    LoginDao login;
+
+    @RequestMapping(value = "/loginPage", method = RequestMethod.GET)
     public String loginPage(ModelMap model) {
 
         return "login";
@@ -33,22 +31,18 @@ public class LoginController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(@ModelAttribute LoginModel cr) {
-         System.out.print(cr.getUsername()+" - "+cr.getPasssword());
-         List<LoginModel> list  = login.authentication(cr);
-         try{
-         
-         if(list.get(0) != null){
-         return "redirect:/showCourse.htm";
-         }
-         else{
-         return "redirect:/loginPage.htm";
-         }
-         }
-         catch(Exception ex){
-         return "redirect:/loginPage.htm";
-         }
-        
+        System.out.print(cr.getUsername() + " - " + cr.getPasssword());
+        List<LoginModel> list = login.authentication(cr);
+        try {
+
+            if (list.get(0) != null) {
+                return "redirect:/showCourse.htm";
+            } else {
+                return "redirect:/loginPage.htm";
+            }
+        } catch (Exception ex) {
+            return "redirect:/loginPage.htm";
+        }
+
     }
-
-
 }
