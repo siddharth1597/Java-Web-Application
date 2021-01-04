@@ -43,7 +43,7 @@ public class CourseDao {
     }
 
     public List<AddCourseModel> getKeyId(String course_id) {
-        String getKey = "select * from course where course_id=" + course_id;
+        String getKey = "select * from course where course_id='" + course_id+"'";
 
         return template.query(getKey, (ResultSet res, int row) -> {
             AddCourseModel course = new AddCourseModel();
