@@ -50,7 +50,7 @@
             <table id="course_table" class="table table-striped table-bordered">
                 <thead>
                     <tr>
-                       
+                        <th>#</th>
                         <th>Course Name</th>
                         <th>Level Course</th>
                         <th>Field</th>
