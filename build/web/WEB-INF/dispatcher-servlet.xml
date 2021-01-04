@@ -39,7 +39,7 @@
     <bean id="dao" class="com.spring.dao.CourseDao">    
         <property name="template" ref="jt"></property>    
     </bean>
-    <bean id="loginDao" class="com.spring.dao.LoginDeo">    
+    <bean id="loginDao" class="com.spring.dao.LoginDao">    
         <property name="template" ref="jt"></property>    
     </bean>
 </beans>

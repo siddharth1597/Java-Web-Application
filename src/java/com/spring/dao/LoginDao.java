@@ -13,8 +13,8 @@ import org.springframework.jdbc.core.RowMapper;
 import com.spring.model.AddCourseModel;
 import com.spring.model.LoginModel;
 
-public class LoginDeo {
-    
+public class LoginDao {
+
     JdbcTemplate template;
     int lastId;
 
@@ -22,15 +22,14 @@ public class LoginDeo {
         this.template = template;
     }
 
-
     public List<LoginModel> authentication(LoginModel loginModel) {
         System.out.print("HiBefore");
-        String query = "select * from users where email_id='"+loginModel.getUsername()+"' and password='"+loginModel.getPasssword()+"'";
+        String query = "select * from users where email_id='" + loginModel.getUsername() + "' and password='" + loginModel.getPasssword() + "'";
         System.out.print(query);
         return template.query(query, (ResultSet res, int row) -> {
             LoginModel loginModel2 = new LoginModel();
             loginModel2.setUsername(res.getString("email_id"));
-            
+
             return loginModel2;
         });
     }
