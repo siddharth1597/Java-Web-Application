@@ -33,7 +33,12 @@
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="level_course" placeholder="Level" name="level"/>
+                       
+                        <select class="form-control" id="level_course" name="level">
+                            <option value="Undergraduate">Undergraduate</option>
+                             <option value="PHD">PHD</option>
+                             <option value="Postgraduate">Postgraduate</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -45,7 +50,7 @@
             <table id="course_table" class="table table-striped table-bordered">
                 <thead>
                     <tr>
-                        <th>#</th>
+                       
                         <th>Course Name</th>
                         <th>Level Course</th>
                         <th>Field</th>
@@ -54,7 +59,9 @@
                     </tr>
                 </thead>
                 <tbody>
+                   
                     <c:forEach var="course" items="${course_list}">   
+                        
                         <tr>  
                             <td>${course.courseID}</td>
                             <td>${course.courseName}</td>
