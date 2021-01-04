@@ -10,7 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body style="background: url('resources/images/university_img.jpg');">
         <div class="container">
             <h3 class="mt-4 mb-4">Course Settings</h3>
             <form method="post" action="saveCourse.htm">
@@ -28,7 +28,11 @@
                 </div>
                 <div class="form-group col-md-7">
                     <label for="level">Course Level</label>
-                    <input type="text" class="form-control" id="level" placeholder="Enter Level" name="level">
+                    <select class="form-control" id="level" name="level">
+                        <option value="Undergraduate">Undergraduate</option>
+                        <option value="PHD">PHD</option>
+                        <option value="Postgraduate">Postgraduate</option>
+                    </select>
                 </div>
                 <div class="form-group col-md-7">
                     <label for="teacher">Teacher Name</label>
