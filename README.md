@@ -18,7 +18,7 @@ To get the code:
 -------------------
 Clone the repository:
 
-    $ git clone git://github.com/siddharth1597/java-web-application.git
+    $ git clone git://github.com/siddharth1597/Java-Web-Application.git
     
 If this is your first time using Github, review https://help.github.com to learn the basics.
 
@@ -28,4 +28,4 @@ From the command line with Maven:
 
 $ cd spring-mvc-showcase
 $ mvn jetty:run 
-Access the deployed web application at: http://localhost:8080/java-web-application/
+Access the deployed web application at: http://localhost:8080/Java-Web-Application/
